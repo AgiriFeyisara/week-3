@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Layout</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: red;
+            padding: 15px;
+        }
+
+        main {
+            flex: 2;
+            display: flex;
+        }
+
+        .left,
+        .right {
+            background-color: rosybrown;
+            flex: 1;
+        }
+
+        .middle {
+            flex: 2;
+            background-color: skyblue;
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="flex">
+        <h2>header</h2>
+    </header>
+    <main>
+        <div class="left flex">
+            <h2>left</h2>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="middle flex">
+            <h2>middle</h2>
+            <p></p>
+            <p></p>
+        </div>
+        <div class="right flex">
+            <h2>right</h2>
+            <p></p>
+            <p></p>
+        </div>
+    </main>
+    <footer class="flex">
+        <h2>footer</h2>
+    </footer>
+</body>
+
+</html>
